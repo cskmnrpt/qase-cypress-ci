@@ -14,8 +14,9 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - run: npm install cypress
-    - run: npm install cypress-qase-reporter
     - run: npx cypress run
   build-n-publish:
     runs-on: ubuntu-latest
