@@ -4,7 +4,7 @@
     "mode": "testops",
     "screenshotFolder": "screenshots",
     "videoFolder": "videos",
-    "apiToken": "026195c34b4ee75df2633f9491be3d3671c5fb428f744d99200cc843310dea38",
+    "apiToken": none,
     "projectCode": "CDS",
     "logging": true,
     "basePath": "https://api.qase.io/v1",
