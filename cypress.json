@@ -1,23 +1,14 @@
 {
-  "reporter": "cypress-multi-reporters",
+  "reporter": "cypress-qase-reporter",
   "reporterOptions": {
-    "reporterEnabled": "cypress-mochawesome-reporter, cypress-qase-reporter",
-    "cypressMochawesomeReporterReporterOptions": {
-      "charts": true
-    },
-    "cypressQaseReporterReporterOptions": {
-      "apiToken": "026195c34b4ee75df2633f9491be3d3671c5fb428f744d99200cc843310dea38",
-      "projectCode": "CDS",
-      "logging": true,
-      "basePath": "https://api.qase.io/v1",
-      "screenshotFolder": "screenshots",
-      "sendScreenshot": true,
-      "runComplete": true,
-      "environmentId": null,
-      "rootSuiteTitle": "Cypress tests"
-    }
-  },
-  "video": false,
-  "e2e": {
+    "mode": "testops",
+    "screenshotFolder": "screenshots",
+    "videoFolder": "videos",
+    "apiToken": "026195c34b4ee75df2633f9491be3d3671c5fb428f744d99200cc843310dea38",
+    "projectCode": "CDS",
+    "logging": true,
+    "basePath": "https://api.qase.io/v1",
+    "sendScreenshot": true,
+    "runComplete": true
   }
 }
