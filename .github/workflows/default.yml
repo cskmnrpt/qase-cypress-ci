@@ -6,16 +6,16 @@ on:
       qase_api_base_url: 'https://api.qase.io/v1'
         description: 'Qase API URL'
         required: true
-      qase_report: true
+      qase_report: 1
         description: 'Enabled/disabled reporting to Qase'
         required: true
       qase_project_code: CDS
         description: 'Qase project code'
         required: true
-      qase_run_id:
+      qase_run_id: null
         description: 'Qase Run ID'
         required: true
-      qase_run_complete: true
+      qase_run_complete: 1
         description: 'Complete Qase Run'
         required: true
 
