@@ -1,3 +1,11 @@
 {
   "reporter": "cypress-qase-reporter"
+  "reporterOptions": {
+    "mode": "testops",
+    "screenshotFolder": "screenshots",
+    "videoFolder": "videos",
+    "apiToken": null,
+    "logging": true,
+    "sendScreenshot": true,
+  }
 }
