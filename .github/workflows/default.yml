@@ -1,4 +1,4 @@
-name: cypress
+name: default
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
       qase_api_base_url: 'https://api.qase.io/v1'
         description: 'Qase API URL'
         required: true
-      qase_report: 1
+      qase_report: true
         description: 'Enabled/disabled reporting to Qase'
         required: true
       qase_project_code: CDS
@@ -15,7 +15,7 @@ on:
       qase_run_id:
         description: 'Qase Run ID'
         required: true
-      qase_run_complete: 1
+      qase_run_complete: true
         description: 'Complete Qase Run'
         required: true
 
