@@ -37,10 +37,14 @@ jobs:
       - uses: qase-tms/qase-link-run@main
         env:
           QASE_API_TOKEN: ${{ env.QASE_API_TOKEN }}
+          QASE_PROJECT_CODE: ${{ inputs.qase_project_code }}
+          QASE_RUN_COMPLETE: ${{ inputs.qase_run_complete }}
+          QASE_REPORT: ${{ inputs.qase_report }}
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm test
+      - run: npm install cypress
+      - run: npm install cypress-qase-reporter
+      - run: npx cypress run
