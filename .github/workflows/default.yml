@@ -43,5 +43,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install cypress
-      - run: npm install cypress-qase-reporter
       - run: npx cypress run
