@@ -1,6 +1,6 @@
 import {qase} from 'cypress-qase-reporter/dist/mocha'
 
-qase([718,719], it('tests that exist in your project repo', () => {
+qase([1], it('Authorization', () => {
     cy.visit('https://example.com');
     cy.get('h1').should('contain', 'This is an incorrect header to test');
     }
