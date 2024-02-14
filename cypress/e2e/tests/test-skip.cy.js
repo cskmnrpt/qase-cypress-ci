@@ -35,7 +35,7 @@ describe('My First Test', () => {
         cy.get('.action-email')
             .type('fake@email.com')
             .should('have.value', 'unexpected@email.com');
-    }));
+    });
 
     it('Go to utilities', () => {
         cy.visit('https://example.cypress.io');
