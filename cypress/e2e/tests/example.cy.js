@@ -7,7 +7,7 @@ qase([1], it('Authorization', () => {
   )
 )
 
-qase(it.skip('Gets, types and asserts', () => {
+it.skip('Gets, types and asserts', () => {
     cy.visit('https://example.cypress.io');
     cy.contains('type').click();
     
