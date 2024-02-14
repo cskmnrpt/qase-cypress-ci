@@ -23,7 +23,7 @@ describe('My First Test', () => {
             .should('have.value', 'unexpected@email.com');
     }));
 
-    qase(515, it.skip('Gets, types and asserts', () => {
+    it.skip('Gets, types and asserts', () => {
         cy.visit('https://example.cypress.io');
 
         cy.contains('type').click();
