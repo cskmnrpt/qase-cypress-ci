@@ -5,7 +5,6 @@ import {qase} from 'cypress-qase-reporter/dist/mocha'
     cy.get('h1').should('contain', 'This is an incorrect header to test');
     }
   )
-)
 
   it('Test that is auto-created by Cypress', () => {
     cy.visit('https://qase.io');
